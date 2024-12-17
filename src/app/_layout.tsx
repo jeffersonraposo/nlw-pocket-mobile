@@ -1,5 +1,6 @@
 import { Stack } from "expo-router"
 import { colors } from "@/styles/theme"
+import { Loading } from "@/components/loading"
 
 import {
     useFonts,
@@ -18,7 +19,7 @@ export default function Layot() {
     })
 
     if (!fontsLoaded) {
-        return
+        return <Loading />
     }
 
 
